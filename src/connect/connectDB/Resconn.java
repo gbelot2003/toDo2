@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package todo2;
+package connect.connectDB;
 
 import connect.connectDB.connectDB;
 import java.sql.Connection;
