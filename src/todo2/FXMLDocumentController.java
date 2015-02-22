@@ -70,7 +70,6 @@ public class FXMLDocumentController implements Initializable {
         // Tenemos que saber que es un Stage
         Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         // Parece que la Scene sera el parent que referimos
-        app_stage.hide();
         app_stage.setScene(home_page_scene);
         // Mostramos el stage % Llamemoslo estado %
         app_stage.show();    

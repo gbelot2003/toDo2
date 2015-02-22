@@ -20,9 +20,9 @@ public class ToDo2 extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
-        
         Scene scene = new Scene(root);
-        
+        String css = ToDo2.class.getResource("newStyles.css").toExternalForm();
+        scene.getStylesheets().add(css);
         stage.setScene(scene);
         stage.show();
     }
