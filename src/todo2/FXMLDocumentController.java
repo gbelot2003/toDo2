@@ -40,12 +40,16 @@ public class FXMLDocumentController implements Initializable {
         Resconn res = new Resconn("Select * from users where username =" + "'" + txtUser.getText() + "' AND password =" + "'"+ txtPass.getText() + "'");
         String username = res.getUsername();
         String password = res.getPassword();
-        if(username != null){
-            if(password != null){
-                this.stager(event);
-            }else{
+        if(txtUser.getText() != null && txtPass.getText() != null){
+            if (txtUser.getText() != username) {
+                errorLabel.setText("El usuario no existe");
+            }
+            if(txtPass.getText() != password){
                 errorLabel.setText("El Password es incorrecto");
             }
+            
+             this.stager(event);
+            
         } else {
             errorLabel.setText("No Existe ese usuario");
         }
