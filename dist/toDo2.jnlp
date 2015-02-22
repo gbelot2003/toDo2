@@ -12,7 +12,7 @@
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
     <jar href="lib/sqlite-jdbc-3.8.7.jar" size="3959324" download="eager" />
-    <jar href="toDo2.jar" size="28114" download="eager" />
+    <jar href="toDo2.jar" size="23904" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="toDo2" >
     <param name="requiredFXVersion" value="2.2+"/>

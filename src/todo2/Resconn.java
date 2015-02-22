@@ -34,10 +34,8 @@ public final class Resconn {
             Statement s = conexion.createStatement(); 
             try (ResultSet rs = s.executeQuery (this.getSqlString())) {
                 while (rs.next()){
-                    if(rs.getString("username") != null && rs.getString("password") != null){
-                        this.setUsername(rs.getString("username"));
-                        this.setPassword(rs.getString("password"));
-                    }
+                    this.setUsername(rs.getString("username"));
+                    this.setPassword(rs.getString("password"));
                 }
              
             } catch(Exception ie) {
