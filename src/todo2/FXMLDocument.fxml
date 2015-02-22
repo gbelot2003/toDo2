@@ -7,10 +7,10 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="238.0" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="todo2.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="238.0" prefWidth="320" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="todo2.FXMLDocumentController">
    <children>
       <TextField fx:id="txtUser" layoutX="121.0" layoutY="61.0" prefHeight="25.0" prefWidth="186.0" />
-      <PasswordField layoutX="121.0" layoutY="100.0" prefHeight="25.0" prefWidth="186.0" />
+      <PasswordField fx:id="txtPass" layoutX="121.0" layoutY="100.0" prefHeight="25.0" prefWidth="186.0" />
       <Button layoutX="38.0" layoutY="175.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="268.0" text="Login" />
       <Label layoutX="112.0" layoutY="14.0" text="Welcome">
          <font>

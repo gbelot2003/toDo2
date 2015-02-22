@@ -16,6 +16,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
@@ -30,14 +31,21 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private TextField txtUser;
     @FXML
+    private PasswordField txtPass; 
+    @FXML 
     private Label errorLabel;
     
     @FXML
     private void handleButtonAction(ActionEvent event) throws IOException {
-        Resconn res = new Resconn("Select * from users where username =" + "'" + txtUser.getText() + "'");
-        String tes = res.getUsername();
-        if(tes != null){
-            this.stager(event);
+        Resconn res = new Resconn("Select * from users where username =" + "'" + txtUser.getText() + "' AND password =" + "'"+ txtPass.getText() + "'");
+        String username = res.getUsername();
+        String password = res.getPassword();
+        if(username != null){
+            if(password != null){
+                this.stager(event);
+            }else{
+                errorLabel.setText("El Password es incorrecto");
+            }
         } else {
             errorLabel.setText("No Existe ese usuario");
         }
