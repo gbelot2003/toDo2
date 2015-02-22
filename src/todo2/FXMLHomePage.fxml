@@ -7,14 +7,15 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="todo2.FXMLHomePageController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="todo2.FXMLHomePageController">
    <children>
       <Label fx:id="label" layoutX="164.0" layoutY="14.0" text="Home Page">
          <font>
             <Font size="53.0" />
          </font>
       </Label>
-      <Button layoutX="274.0" layoutY="329.0" mnemonicParsing="false" onAction="#backOn" text="Back" />
+      <Button layoutX="274.0" layoutY="329.0" mnemonicParsing="false" onAction="#close" text="Close" />
+      <Button fx:id="insetTasks" layoutX="212.0" layoutY="164.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="169.0" text="Insert Tasks" />
+      <Button fx:id="viewTasks" layoutX="212.0" layoutY="212.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="169.0" text="View Tasks" />
    </children>
 </AnchorPane>

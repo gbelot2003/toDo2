@@ -15,6 +15,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
@@ -27,18 +28,14 @@ public class FXMLHomePageController implements Initializable {
     
     @FXML
     private Label label;
-    
     @FXML
-    public void backOn(ActionEvent event) throws IOException{
-        
-        Parent Document_page_parent = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
-        Scene Document_page_scene = new Scene(Document_page_parent);
-        Stage app_stage2 = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        String css = ToDo2.class.getResource("newStyles.css").toExternalForm();
-        Document_page_scene.getStylesheets().add(css);
-        app_stage2.setScene(Document_page_scene);
-        app_stage2.show();
-                      
+    private Button insetTasks;
+    @FXML
+    private Button viewTasks;
+            
+    @FXML
+    public void close(ActionEvent event) throws IOException{
+        this.close(event); 
     }
     /**
      * Initializes the controller class.
