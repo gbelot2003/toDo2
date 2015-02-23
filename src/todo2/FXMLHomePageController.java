@@ -35,8 +35,18 @@ public class FXMLHomePageController implements Initializable {
             
     @FXML
     public void close(ActionEvent event) throws IOException{
-        this.close(event); 
+
     }
+    
+    @FXML
+    public void OpenAddTask(ActionEvent event) throws IOException{
+        Parent Document_page_parent = FXMLLoader.load(getClass().getResource("FXMLInsterTask.fxml"));
+        Scene Document_page_scene = new Scene(Document_page_parent);
+        Stage app_stage2 = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        app_stage2.setScene(Document_page_scene);
+        app_stage2.show();    
+    }
+    
     /**
      * Initializes the controller class.
      */
