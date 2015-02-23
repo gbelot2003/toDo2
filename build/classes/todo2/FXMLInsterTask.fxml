@@ -13,10 +13,10 @@
         <URL value="@fxmlinstertask.css" />
     </stylesheets>
    <children>
-      <TextField fx:id="TitleField" layoutX="91.0" layoutY="45.0" prefHeight="25.0" prefWidth="200.0" />
-      <TextField fx:id="LocationField" layoutX="91.0" layoutY="81.0" prefHeight="25.0" prefWidth="200.0" />
-      <TextArea fx:id="NotesArea" layoutX="91.0" layoutY="116.0" prefHeight="200.0" prefWidth="200.0" />
-      <DatePicker fx:id="Date_Date" layoutX="373.0" layoutY="45.0" prefHeight="25.0" prefWidth="200.0" />
+      <TextField layoutX="91.0" layoutY="45.0" prefHeight="25.0" prefWidth="200.0" />
+      <TextField layoutX="91.0" layoutY="81.0" prefHeight="25.0" prefWidth="200.0" />
+      <TextArea layoutX="91.0" layoutY="116.0" prefHeight="200.0" prefWidth="200.0" />
+      <DatePicker layoutX="373.0" layoutY="45.0" prefHeight="25.0" prefWidth="200.0" />
       <MenuButton fx:id="MenuButtonHour" contentDisplay="RIGHT" layoutX="376.0" layoutY="123.0" mnemonicParsing="false" onAction="#hourMenuItemButtonAction" popupSide="RIGHT" prefHeight="25.0" prefWidth="58.0" textAlignment="RIGHT">
         <items>
           <MenuItem mnemonicParsing="false" text="1" />
@@ -49,13 +49,13 @@
             <MenuItem mnemonicParsing="false" text="60" />
         </items>
       </MenuButton>
-      <MenuButton fx:id="MenuButtonAmp" contentDisplay="RIGHT" layoutX="515.0" layoutY="123.0" mnemonicParsing="false" popupSide="RIGHT" prefHeight="25.0" prefWidth="58.0" textAlignment="RIGHT">
+      <MenuButton fx:id="MenuButtonAmp" contentDisplay="RIGHT" layoutX="515.0" layoutY="123.0" mnemonicParsing="false" onAction="#AmpMenuItemButtonAction" popupSide="RIGHT" prefHeight="25.0" prefWidth="58.0" textAlignment="RIGHT">
         <items>
           <MenuItem mnemonicParsing="false" text="AM" />
           <MenuItem mnemonicParsing="false" text="PM" />
         </items>
       </MenuButton>
-      <Button fx:id="DoneButton" layoutX="414.0" layoutY="259.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="119.0" text="Done" />
+      <Button layoutX="414.0" layoutY="259.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="119.0" text="Done" />
       <Label layoutX="38.0" layoutY="49.0" text="Title :" />
       <Label layoutX="19.0" layoutY="85.0" text="Location: " />
       <Label layoutX="33.0" layoutY="117.0" text="Notes :" />
