@@ -8,7 +8,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="todo2.FXMLInsterTaskController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="todo2.FXMLInsterTaskController">
     <stylesheets>
         <URL value="@fxmlinstertask.css" />
     </stylesheets>
@@ -17,42 +17,43 @@
       <TextField fx:id="LocationField" layoutX="91.0" layoutY="81.0" prefHeight="25.0" prefWidth="200.0" />
       <TextArea fx:id="NotesArea" layoutX="91.0" layoutY="116.0" prefHeight="200.0" prefWidth="200.0" />
       <DatePicker fx:id="Date_Date" layoutX="373.0" layoutY="45.0" prefHeight="25.0" prefWidth="200.0" />
-      <MenuButton fx:id="MenuButtonHour" contentDisplay="RIGHT" layoutX="376.0" layoutY="123.0" mnemonicParsing="false" onAction="#hourMenuItemButtonAction" popupSide="RIGHT" prefHeight="25.0" prefWidth="58.0" textAlignment="RIGHT">
+      <MenuButton fx:id="MenuButtonHour" contentDisplay="RIGHT" layoutX="376.0" layoutY="123.0" mnemonicParsing="false" popupSide="RIGHT" prefHeight="25.0" prefWidth="58.0" text="01" textAlignment="RIGHT">
         <items>
-          <MenuItem mnemonicParsing="false" text="1" />
-          <MenuItem mnemonicParsing="false" text="2" />
-            <MenuItem mnemonicParsing="false" text="3" />
-            <MenuItem mnemonicParsing="false" text="4" />
-            <MenuItem mnemonicParsing="false" text="5" />
-            <MenuItem mnemonicParsing="false" text="6" />
-            <MenuItem mnemonicParsing="false" text="7" />
-            <MenuItem mnemonicParsing="false" text="8" />
-            <MenuItem mnemonicParsing="false" text="9" />
-            <MenuItem mnemonicParsing="false" text="10" />
-            <MenuItem mnemonicParsing="false" text="11" />
-            <MenuItem mnemonicParsing="false" text="12" />
+          <MenuItem mnemonicParsing="false" onAction="#hourMenuItemButtonAction" text="01" />
+          <MenuItem mnemonicParsing="false" onAction="#hourMenuItemButtonAction" text="02" />
+            <MenuItem mnemonicParsing="false" onAction="#hourMenuItemButtonAction" text="03" />
+            <MenuItem mnemonicParsing="false" onAction="#hourMenuItemButtonAction" text="04" />
+            <MenuItem mnemonicParsing="false" onAction="#hourMenuItemButtonAction" text="05" />
+            <MenuItem mnemonicParsing="false" onAction="#hourMenuItemButtonAction" text="06" />
+            <MenuItem mnemonicParsing="false" onAction="#hourMenuItemButtonAction" text="07" />
+            <MenuItem mnemonicParsing="false" onAction="#hourMenuItemButtonAction" text="08" />
+            <MenuItem mnemonicParsing="false" onAction="#hourMenuItemButtonAction" text="09" />
+            <MenuItem mnemonicParsing="false" onAction="#hourMenuItemButtonAction" text="10" />
+            <MenuItem mnemonicParsing="false" onAction="#hourMenuItemButtonAction" text="11" />
+            <MenuItem mnemonicParsing="false" onAction="#hourMenuItemButtonAction" text="12" />
         </items>
       </MenuButton>
-      <MenuButton fx:id="MenuButtonMinutes" contentDisplay="RIGHT" layoutX="444.0" layoutY="123.0" mnemonicParsing="false" onAction="#MinutMenuItemButtonAction" popupSide="RIGHT" prefHeight="25.0" prefWidth="58.0" textAlignment="RIGHT">
+      <MenuButton fx:id="MenuButtonMinutes" contentDisplay="RIGHT" layoutX="444.0" layoutY="123.0" mnemonicParsing="false" onAction="#MinutMenuItemButtonAction" popupSide="RIGHT" prefHeight="25.0" prefWidth="58.0" text="00" textAlignment="RIGHT">
         <items>
-          <MenuItem mnemonicParsing="false" text="5" />
-          <MenuItem mnemonicParsing="false" text="10" />
-            <MenuItem mnemonicParsing="false" text="15" />
-            <MenuItem mnemonicParsing="false" text="20" />
-            <MenuItem mnemonicParsing="false" text="25" />
-            <MenuItem mnemonicParsing="false" text="30" />
-            <MenuItem mnemonicParsing="false" text="35" />
-            <MenuItem mnemonicParsing="false" text="40" />
-            <MenuItem mnemonicParsing="false" text="45" />
-            <MenuItem mnemonicParsing="false" text="50" />
-            <MenuItem mnemonicParsing="false" text="55" />
-            <MenuItem mnemonicParsing="false" text="60" />
+            <MenuItem mnemonicParsing="false" onAction="#MinutMenuItemButtonAction" text="00" />
+          <MenuItem mnemonicParsing="false" onAction="#MinutMenuItemButtonAction" text="05" />
+          <MenuItem mnemonicParsing="false" onAction="#MinutMenuItemButtonAction" text="10" />
+            <MenuItem mnemonicParsing="false" onAction="#MinutMenuItemButtonAction" text="15" />
+            <MenuItem mnemonicParsing="false" onAction="#MinutMenuItemButtonAction" text="20" />
+            <MenuItem mnemonicParsing="false" onAction="#MinutMenuItemButtonAction" text="25" />
+            <MenuItem mnemonicParsing="false" onAction="#MinutMenuItemButtonAction" text="30" />
+            <MenuItem mnemonicParsing="false" onAction="#MinutMenuItemButtonAction" text="35" />
+            <MenuItem mnemonicParsing="false" onAction="#MinutMenuItemButtonAction" text="40" />
+            <MenuItem mnemonicParsing="false" onAction="#MinutMenuItemButtonAction" text="45" />
+            <MenuItem mnemonicParsing="false" onAction="#MinutMenuItemButtonAction" text="50" />
+            <MenuItem mnemonicParsing="false" onAction="#MinutMenuItemButtonAction" text="55" />
+            <MenuItem mnemonicParsing="false" onAction="#MinutMenuItemButtonAction" text="60" />
         </items>
       </MenuButton>
-      <MenuButton fx:id="MenuButtonAmp" contentDisplay="RIGHT" layoutX="515.0" layoutY="123.0" mnemonicParsing="false" popupSide="RIGHT" prefHeight="25.0" prefWidth="58.0" textAlignment="RIGHT">
+      <MenuButton fx:id="MenuButtonAmp" contentDisplay="RIGHT" layoutX="515.0" layoutY="123.0" mnemonicParsing="false" popupSide="RIGHT" prefHeight="25.0" prefWidth="58.0" text="AM" textAlignment="RIGHT">
         <items>
-          <MenuItem mnemonicParsing="false" text="AM" />
-          <MenuItem mnemonicParsing="false" text="PM" />
+          <MenuItem mnemonicParsing="false" onAction="#AmpMenuItemButtonAction" text="AM" />
+          <MenuItem mnemonicParsing="false" onAction="#AmpMenuItemButtonAction" text="PM" />
         </items>
       </MenuButton>
       <Button fx:id="DoneButton" layoutX="414.0" layoutY="259.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="119.0" text="Done" />

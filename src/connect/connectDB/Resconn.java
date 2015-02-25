@@ -4,8 +4,6 @@
  * and open the template in the editor.
  */
 package connect.connectDB;
-
-import connect.connectDB.connectDB;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
@@ -27,7 +25,7 @@ public final class Resconn {
             this.getUser();
         }
     }
-    
+        
     private void getUser(){
         try {
             conexion = connectDB.connect();
