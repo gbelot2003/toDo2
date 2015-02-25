@@ -27,7 +27,7 @@ public final class Resconn {
             this.getUser();
         }
     }
-    
+        
     private void getUser(){
         try {
             conexion = connectDB.connect();
