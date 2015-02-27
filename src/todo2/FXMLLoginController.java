@@ -25,7 +25,7 @@ import javafx.stage.Stage;
  *
  * @author ajax-32
  */
-public class FXMLDocumentController implements Initializable {
+public class FXMLLoginController implements Initializable {
     
     //@FXML
     //private Label label;
