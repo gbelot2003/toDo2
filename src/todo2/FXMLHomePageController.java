@@ -42,6 +42,10 @@ public class FXMLHomePageController implements Initializable {
     public void OpenAddTask(ActionEvent event) throws IOException{
         Parent Document_page_parent = FXMLLoader.load(getClass().getResource("FXMLInsterTask.fxml"));
         Scene Document_page_scene = new Scene(Document_page_parent);
+        // Llamamos a la platilla de css
+        String css = ToDo2.class.getResource("newStyles.css").toExternalForm();
+        // Aplicamos la plantilla de css
+        Document_page_scene.getStylesheets().add(css);
         Stage app_stage2 = (Stage) ((Node) event.getSource()).getScene().getWindow();
         app_stage2.setScene(Document_page_scene);
         app_stage2.show();    

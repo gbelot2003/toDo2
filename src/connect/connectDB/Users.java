@@ -12,14 +12,14 @@ import java.sql.Statement;
  *
  * @author ajax-32
  */
-public final class Resconn {
+public final class Users {
     private Connection conexion;
     private String username;
     private String password;
     private String SqlString;
     
-    public Resconn(){}
-    public Resconn(String sql){
+    public Users(){}
+    public Users(String sql){
         if(sql != null){
             this.setSqlString(sql);
             this.getUser();

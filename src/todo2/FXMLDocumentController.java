@@ -5,7 +5,7 @@
  */
 package todo2;
 
-import connect.connectDB.Resconn;
+import connect.connectDB.Users;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -38,7 +38,7 @@ public class FXMLDocumentController implements Initializable {
     
     @FXML
     private void handleButtonAction(ActionEvent event) throws IOException {
-        Resconn res = new Resconn("Select * from users where username =" + "'" + txtUser.getText() + "' AND password =" + "'"+ txtPass.getText() + "'");
+        Users res = new Users("Select * from users where username =" + "'" + txtUser.getText() + "' AND password =" + "'"+ txtPass.getText() + "'");
         String username = res.getUsername();
         String password = res.getPassword();
         if(username != null && password != null){
